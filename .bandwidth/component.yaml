@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  description: Forked from https://github.com/noahg1/test-fork
+  annotations:
+    github.com/project-slug: noahg1/test-fork
+  organization: BW
+  costCenter: UNKNOWN
+  platformType: AWS
+  buildPlatform: GitHub Actions
+spec:
+  type: Service
+  owner: github/band-swi
+  lifecycle: |
+    Prototype
+    dependsOn:
+        - resource:platform/AWS
+        - resource:cost-center/UNKNOWN
