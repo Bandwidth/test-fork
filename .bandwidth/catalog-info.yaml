@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  schemaVersion: v1.0.0
+  name: test-fork-location
+  description: Links to additional entities in the test-fork repository.
+  annotations:
+    github.com/project-slug: noahg1/test-fork
+spec:
+  targets:
+    - ./.bandwidth/component.yaml
+    - ./.github/CODEOWNERS
